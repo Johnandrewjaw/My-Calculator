@@ -1,0 +1,134 @@
+body {
+    background-color: #dadff7;
+    margin: 0;
+    font-family: "Roboto Mono", monospace;
+}
+
+#calculator {
+    width: 600px;
+    height: 350px;
+    background-color: #07091a;
+    padding: 50px 30px;
+    margin: auto;
+    margin-top: 35px;
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 25px;
+}
+
+#calculation{
+    grid-column: span 6;
+}
+
+.history {
+    grid-column: span 3;
+} 
+
+#historyTitle {
+    color: grey;
+    font-size: 20px;
+    margin: 0px 0px 0px 60px;
+}
+
+.historyItems {
+    color: #fff;
+    font-size: 12px;
+    justify-self: center; 
+    cursor: pointer;
+    margin: 3px;
+    text-align: end;
+    margin: 0px 0px 0px 130px;
+}
+
+.btn-sm {
+    display: grid;
+    font-size: 13px;
+    background-color: #ca5048;
+    color: white;
+    justify-self: left;
+    margin-left: 170px;
+}
+
+#display {
+    background-color: #232347;
+    color: white;
+    text-align: right;
+    font-size: 50px;
+    border: none;
+    justify-self: center;
+    width: 350px;
+    height: 90px;
+    margin: 0px 10px 40px 0px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+#buttons {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 10px;
+    width: 350px;
+    height: 220px;
+    justify-self: center;
+}
+
+#buttons button {
+    border: none;
+    font-size: 30px;
+    background-color: rgb(34, 34, 49);
+    box-shadow: #000 0px 0px 4px 0px;
+    color: white;
+    font-size: 25px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+
+/* HOVER AND ACTIVE STATES */
+#buttons button:hover {
+    opacity: 50%;
+}
+
+#buttons button:active {
+    background-color: #000;
+    color: #fff;
+}
+
+
+/*RESPONSIVE LAYOUT */
+ @media (max-width: 640px) {
+    #calculator {
+        width: 450px;
+        height: auto;
+        padding: 20px;
+        margin-top: 50px;
+        grid-template-columns: repeat(3, 1fr);
+    }
+    #calculation {
+        grid-column: span 3;
+    }
+    .history {
+        grid-column: span 1;
+    }
+    #historyTitle {
+        margin: 5px 0px 20px 10px;
+        font-size: 15px;
+    }
+    .historyItems, .btn-sm {
+        margin: 0px 0px 0px 50px;
+        font-size: 10px;
+    }
+    #display {
+        width: 280px;
+        height: 70px;
+        font-size: 18px;
+        box-sizing: border-box;
+    }
+    #buttons {
+        width: 260px;
+        height: 150px;
+    }
+    #buttons button {
+        font-size: 18px;
+    }
+ }    
