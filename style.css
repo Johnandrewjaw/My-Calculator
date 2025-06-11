@@ -98,7 +98,7 @@ body {
 /*RESPONSIVE LAYOUT */
  @media (max-width: 640px) {
     #calculator {
-        width: 450px;
+        width: 400px;
         height: auto;
         padding: 20px;
         margin-top: 50px;
@@ -115,7 +115,7 @@ body {
         font-size: 15px;
     }
     .historyItems, .btn-sm {
-        margin: 0px 0px 0px 50px;
+        margin: 0px 0px 8px 25px;
         font-size: 10px;
     }
     #display {
